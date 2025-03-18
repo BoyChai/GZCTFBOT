@@ -1,0 +1,14 @@
+Global:
+  # 请求间隔，默认2秒
+  RequestInterval: 2
+QQBot:
+  # 播报群号
+  Group:
+    - 123456789
+    - 987654321
+  # onebot地址，仅支持HTTP
+  OneBot: http://127.0.0.1:5700
+DingDingBot:
+  # 钉钉机器人webhook地址
+  Webhook:
+    - https://oapi.dingtalk.com/robot/send?access_token=xxxxxx

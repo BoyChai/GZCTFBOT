@@ -1,5 +1,10 @@
 package main
 
+import (
+	"GZCTFBOT/config"
+)
+
 func main() {
-	println("Hello, world!")
+	// Init config
+	config.InitConfig()
 }
