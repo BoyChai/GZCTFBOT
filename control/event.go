@@ -1,6 +1,7 @@
 package control
 
 import (
+	"GZCTFBOT/action"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -89,6 +90,9 @@ func StartEvent(baseURL, gameID string, interval int) {
 				if event.ID > lastID {
 					if msg := formatData(event); msg != "" {
 						fmt.Println(msg)
+						for _, v := range action.Chans {
+							v <- msg
+						}
 					}
 					lastID = event.ID
 				}

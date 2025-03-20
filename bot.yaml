@@ -1,8 +1,10 @@
 Global:
   # 请求间隔，默认2秒
   RequestInterval: 2
-  BaseURL: http://gzctf.com/
-  GameID: 2
+  BaseURL: http://ctf.wlaq
+  GameID: 4
+  DingDIngBot: true
+  QQBot: false
 QQBot:
   # 播报群号
   Group:
