@@ -14,7 +14,7 @@ import (
 
 var dingDingChan chan string
 
-var once sync.Once
+var diingOnce sync.Once
 
 type Text struct {
 	Content string `json:"content"`
@@ -26,7 +26,7 @@ type RobotSendRequest struct {
 }
 
 func NewDingDing() {
-	once.Do(func() {
+	diingOnce.Do(func() {
 		dingDingChan = newChan()
 		go sendDingTalkWebhookMessage()
 	})

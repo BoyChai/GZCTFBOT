@@ -14,6 +14,9 @@ func main() {
 	if viper.GetBool("Global.DingDIngBot") {
 		action.NewDingDing()
 	}
+	if viper.GetBool("Global.QQBot") {
+		action.NewQQ()
+	}
 
 	control.StartEvent(viper.GetString("Global.BaseURL"), viper.GetString("Global.GameID"), viper.GetInt("Global.RequestInterval"))
 
